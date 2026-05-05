@@ -1,0 +1,44 @@
+<!-- Demonstrate DOM Element query selector All (.querySelectorAll()) using function + Loop  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>DOM querySelectorAll</title>
+</head>
+
+<body>
+
+    <p class="demo">This is 1st line..</p>
+
+    <p class="demo">This is 2nd line..</p>
+
+    <p class="demo">This is 3rd line..</p>
+
+    <p class="demo">this is 4th line..</p>
+
+    <button onclick="change()">click here.. for change colour</button>
+
+
+
+    <!-- JavaScript Code  -->
+    <script>
+
+        function change() {
+
+            let x = document.querySelectorAll(".demo");
+
+            for (let i = 0; i < x.length; i++) {
+
+                x[i].style.color = "red";
+            }
+        }
+
+    </script>
+
+</body>
+
+
+</html>

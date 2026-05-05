@@ -1,0 +1,39 @@
+<!-- // Demonstrate dom Elements By Tag Name  -->
+
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>Dom TagName2</title>
+</head>
+
+<body>
+
+    <div id="block">
+
+        <h4>This is fisrt line....</h4>
+
+        <h4>This is second line.....</h4>
+
+        <h4>This is second line.....</h4>
+
+    </div>
+
+    <h4 id="demo"></h4>
+
+
+    <!-- JavaScript Code  -->
+    <script>
+
+        const x = document.getElementById("block");
+        const y = x.getElementsByTagName("h4");
+
+        document.getElementById("demo").innerHTML = y[0].innerHTML;
+
+    </script>
+
+</body>
+
+</html>

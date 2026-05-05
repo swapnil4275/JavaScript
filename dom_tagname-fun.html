@@ -1,0 +1,40 @@
+<!-- Demonstrate DOM Elements By Tag Name (function)  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>DOM TagName (Function)</title>
+</head>
+
+<body>
+
+    <p>1st para...</p>
+
+    <p>2nd para...</p>
+
+    <p>3rd para...</p>
+
+    <button onclick="addline()">Click Here..</button>
+
+    <p></p>
+
+
+
+    <!-- JavaScript Code  -->
+    <script>
+
+        function addline() {
+
+            let line = document.getElementsByTagName("p");
+
+            line[3].innerHTML = "New line added..!";
+        }
+
+    </script>
+
+</body>
+
+</html>

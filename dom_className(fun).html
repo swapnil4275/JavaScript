@@ -1,0 +1,40 @@
+<!-- Demonstrate Dom .getElementsByClassName  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" ;>
+
+    <title>DOM ClassName</title>
+</head>
+
+<body>
+
+    <p class="demo1">This Is 1st Line...</p>
+
+    <p class="demo1">This Is 2nd Line...</p>
+
+    <p class="demo1">This Is 3rd Line...</p>
+
+    <button onclick="change()">click for text change..!</button>
+
+
+    <!-- javascript code  -->
+    <script>
+
+        function change() {
+
+            let data = document.getElementsByClassName("demo1");
+
+            data[0].innerHTML = "1st line is Changed!";
+
+            data[1].innerHTML = "2nd line is Changed..!";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

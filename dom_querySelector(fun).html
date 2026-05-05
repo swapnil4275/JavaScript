@@ -1,0 +1,38 @@
+<!-- Demonstrate DOM query selector (.getquerySelector())  Function() -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>DOM querySelector</title>
+</head>
+
+<body>
+
+    <p id="demo">Hello All...!</p>
+
+    <p class="demo1">Good Morning..</p>
+
+    <p class="demo1">Good Afternoon..</p>
+
+    <p class="demo1">Good Night..</p>
+
+    <button onclick="color()">change colour</button>
+
+
+    <!-- JavaScript Code  -->
+    <script>
+
+        function color() {
+
+            document.querySelector("#demo").style.color = "red";
+
+            document.querySelector(".demo1").style.color = "blue";
+        }
+    </script>
+
+</body>
+
+</html>
