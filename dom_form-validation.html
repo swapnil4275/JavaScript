@@ -1,0 +1,41 @@
+<!-- Demonstrate DOM Form Validation  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>DOM Form Validation</title>
+</head>
+
+<body>
+
+    <form id="myform">
+        <label for="u_name">Name: </label>
+        <input type="text" name="u_name" id="u_name">
+
+        <button type="button" onclick="check()">Submit</button>
+    </form>
+
+
+    <!-- JavaScript Code  -->
+    <script>
+        function check() {
+
+            let x = document.getElementById("u_name").value;
+
+            if (x == "") {
+
+                alert("name is required");
+            }
+            else{
+                alert("form submitted!");
+        
+            }
+        }
+    </script>
+
+</body>
+
+</html>

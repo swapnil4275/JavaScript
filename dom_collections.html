@@ -1,0 +1,44 @@
+<!-- Demonstrate DOM collections  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>DOM Collections</title>
+</head>
+
+<body>
+
+    <form id="myform">
+        <label for="username">Name: </label>
+        <input type="text" name="username" id="username"> <br><br>
+
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age"> <br><br>
+
+        <button type="button" onclick="getdata()">Submit</button>
+    </form>
+
+    <h3 id="result"></h3>
+
+
+    <!-- JavaScript Code  -->
+    <script>
+
+        function getdata() {
+
+            let f = document.forms["myform"];
+
+            let name = f["username"].value;
+            let age = f["age"].value;
+
+            document.getElementById("result").innerHTML = "Name: " + name + " | Age: " + age;
+        }
+
+    </script>
+
+</body>
+
+</html>

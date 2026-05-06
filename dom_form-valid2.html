@@ -1,0 +1,47 @@
+<!-- Demonstrate DOM Form Validation  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>DOM Form Validation 2</title>
+</head>
+
+<body>
+
+    <form onsubmit="return check()">
+        <label for="num">Enter Number: </label> <input type="number" id="num">
+
+        <p id="msg" style="color: red;"></p>
+
+        <input type="submit" value="submit">
+    </form>
+
+
+    <!-- JavaScript Code  -->
+    <script>
+        function check() {
+
+            let x = document.getElementById("num").value;
+
+            let msg = document.getElementById("msg");
+
+            if (x < 1 || x > 10 || x == "") {
+
+                msg.innerHTML = "Input a Number between 1 and 10";
+                return false;
+            }
+
+            else {
+                msg.innerHTML = "Valid Input !";
+                return true;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
