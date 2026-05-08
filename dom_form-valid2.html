@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
 
     <title>DOM Form Validation 2</title>
+    <style>
+        #msg {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,7 +19,7 @@
     <form onsubmit="return check()">
         <label for="num">Enter Number: </label> <input type="number" id="num">
 
-        <p id="msg" style="color:red;"></p>
+        <p id="msg"></p>
 
         <input type="submit" value="submit">
     </form>
