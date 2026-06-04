@@ -1,0 +1,49 @@
+<!-- DOM & Events practice Example -->
+
+<!-- check eligible or not for voting  -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>DOM-event example</title>
+</head>
+
+<body>
+
+    <h3>Check Eligible or Not for Voting</h3>
+
+    <label for="age">Enter Age:</label>
+    <input type="number" id="age">
+
+    <p id="result"></p>
+
+
+    <script>
+
+        let x = document.getElementById("age").addEventListener("keyup", show);
+
+        function show() {
+
+            let x = document.getElementById("age").value;
+
+
+            if (x >= 18) {
+
+                document.getElementById("result").innerHTML = "You Are Eligible For Vote..!";
+            }
+
+            else {
+
+                document.getElementById("result").innerHTML = "You Are Not Eligible For Vote.";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

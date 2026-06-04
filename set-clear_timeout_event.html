@@ -1,0 +1,43 @@
+<!-- Demonstrate setTimeout && clearTimeout  Events -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>settimeout & cleartimeout Events</title>
+</head>
+
+<body>
+
+    <button onclick="start()">Start</button>
+
+    <button onclick="stop()">Stop</button>
+
+
+    <script>
+
+        let t;
+
+        function start(){
+
+            t = setTimeout(show, 3000);
+        }
+
+        function show() {
+
+            alert("Welcome..");
+        }
+
+        function stop() {
+
+            clearTimeout(t);
+            alert("Timeout Stopped!");
+        }
+
+    </script>
+
+</body>
+
+</html>

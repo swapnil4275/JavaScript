@@ -1,0 +1,75 @@
+<!-- Demonstrate Mouse Events  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>Mouse Events</title>
+</head>
+
+<body>
+
+    <h2>Mouse Events</h2>
+
+    <h1 id="mouseover" onmouseover="mouseover()">onmouseover Event.</h1>
+
+    <h1 id="mouseout" onmouseout="mouseout()">onmouseout Event.</h1>
+
+    <h1 id="mousedown" onmousedown="mousedown()">onmousedown Event.</h1>
+
+    <h1 id="mouseup" onmouseup="mouseup()">onmouseup Event.</h1>
+
+    <h1 id="singleclick" onclick="singleclick()">onclick Event.</h1>
+
+    <h1 id="dblclick" ondblclick="dblclick()">ondblclick Event.</h1>
+
+
+
+    <!-- JavaScript Code  -->
+
+    <script>
+
+        function mouseover() {
+
+            document.getElementById("mouseover").style.background = "blue";
+        }
+
+
+        function mouseout() {
+
+            document.getElementById("mouseout").style.background = "skyblue";
+        }
+
+
+        function mousedown() {
+
+            document.getElementById("mousedown").style.background = "yellow";
+        }
+
+
+        function mouseup() {
+
+            document.getElementById("mouseup").style.background = "purple";
+        }
+
+
+        function singleclick() {
+
+            document.getElementById("singleclick").style.background = "orange";
+        }
+
+
+        function dblclick() {
+
+            document.getElementById("dblclick").style.background = "black";
+            document.getElementById("dblclick").style.color = "white";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

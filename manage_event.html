@@ -1,0 +1,53 @@
+<!-- Demonstrate Manage Events Add & Remove   -->
+<!-- addEventListner & removeEventListner  -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>manage events (add & remove)</title>
+</head>
+
+<body>
+
+    <button id="start">Start</button>
+
+    <button id="stop">Stop</button>
+
+    <h1 id="demo"></h1>
+
+
+
+    <!-- JavaScript Code  -->
+    <script>
+
+        let btn = document.getElementById("start");
+
+        btn.addEventListener("click", show);
+
+
+        function show() {
+
+            document.getElementById("demo").innerHTML = "Hello";
+        }
+
+
+        document.getElementById("stop").addEventListener("click", stopevent);
+
+        function stopevent() {
+
+            btn.removeEventListener("click", show);
+
+            document.getElementById("demo").innerHTML = "";
+
+            alert("Event Removed");
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Bonus</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: rgb(244, 244, 244);
+        }
+
+        table {
+            margin: auto;
+            margin-top: 50px;
+            border-collapse: collapse;
+            width: 600px;
+            background: white;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: royalblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Employee Salary Bonus</h1>
+
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Bonus</th>
+            <th>Final Salary</th>
+        </tr>
+
+        <tbody id="data"></tbody>
+
+    </table>
+
+    <script>
+
+        const employees = [
+            { name: "Amit", salary: 20000 },
+            { name: "Sneha", salary: 35000 },
+            { name: "Rahul", salary: 50000 }
+        ];
+
+        let text = "";
+
+        employees.map(function (emp) {
+
+            let bonus = emp.salary * 10 / 100;
+
+            let finalSalary = emp.salary + bonus;
+
+            text = text +
+
+                "<tr>" +
+
+                "<td>" + emp.name + "</td>" +
+
+                "<td>" + emp.salary + "</td>" +
+
+                "<td>" + bonus + "</td>" +
+
+                "<td>" + finalSalary + "</td>" +
+
+                "</tr>";
+
+        });
+
+        document.getElementById("data").innerHTML = text;
+
+    </script>
+
+</body>
+
+</html>

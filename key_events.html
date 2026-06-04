@@ -1,0 +1,56 @@
+<!-- Demonstrate Key Events  -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+
+    <title>Key Events</title>
+</head>
+
+<body>
+
+    <label for="fname">First-Name:</label>
+    <input type="text" id="fname" onkeydown="keydown()">
+    <p id="f_name"></p>
+    <br>
+
+    <label for="lname">Last-Name:</label>
+    <input type="text" id="lname" onkeyup="keyup()">
+    <p id="l_name"></p>
+    <br>
+
+    <label for="fullname">Full_Name:</label>
+    <input type="text" id="fullname" onkeypress="keypress()" onkeyup="key()">
+    <p id="full_name"></p>
+
+
+
+    <!-- JavaScript Code  -->
+    <script>
+
+        function keydown() {
+
+            document.getElementById("f_name").innerHTML = "Key Pressed..!";
+        }
+
+
+        function keyup() {
+
+            document.getElementById("l_name").innerHTML = "key relesed..!";
+        }
+
+
+        function keypress() {
+
+            document.getElementById("full_name").innerHTML = "Typing...."
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
